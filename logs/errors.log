@@ -18,3 +18,6 @@
 2019-12-20T20:50:38.319Z error: DB_ERROR - Error: ER_DBACCESS_DENIED_ERROR: Access denied for user 'wdm'@'localhost' to database 'wdean_forms'
 2019-12-20T20:57:05.326Z error: CONTROLLER_ERROR - TypeError: Cannot read property 'GET' of undefined
 2019-12-20T21:02:19.797Z error: CONTROLLER_ERROR - TypeError: Cannot read property 'GET' of undefined
+2019-12-22T04:38:40.365Z error: CONTROLLER_ERROR - TypeError: Cannot read property 'GET' of undefined
+2019-12-22T04:38:54.101Z error: CONTROLLER_ERROR - TypeError: Cannot read property 'GET' of undefined
+2019-12-22T04:39:04.590Z error: CONTROLLER_ERROR - TypeError: Cannot read property 'GET' of undefined

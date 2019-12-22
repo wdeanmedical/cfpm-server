@@ -6,18 +6,10 @@ const compression = require('compression')
 const morgan = require('morgan')
 const { logger } = require('@util/logger')
 
-// AUTH MIDDLEWARE
 const { getMySqlConnection } = require('@middleware')
 
-const router = express.Router()
+const router = require('./router')
 
-const controller = require('@controllers/controller')
-
-router.get('/public/testApi', controller.main)
-router.get('/public/getForm', controller.main)
-router.get('/public/getFormFile', controller.main)
-
-// Start express app
 const app = express()
 
 // Log requests with morgan, streamed to winston for writing log files
@@ -34,7 +26,6 @@ app.use(bodyParser.json({ limit: '1mb' }))
 // Parse URL-encoded data to JSON
 app.use(bodyParser.urlencoded({ extended: true }))
 
-// Add cors
 app.use(cors())
 
 // Compress all responses
@@ -55,7 +46,6 @@ app.use((err, req, res, next) => {
 
 app.use(getMySqlConnection)
 
-// Add routes
 app.use('/api', router)
 
 module.exports = app

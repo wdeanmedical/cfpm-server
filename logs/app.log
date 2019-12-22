@@ -303,3 +303,28 @@
 2019-12-22T01:48:22.588Z info: Form server running on port: 3000
 2019-12-22T01:50:09.528Z info: [0mGET /api/public/getForm [36m304 [0m43.233 ms - -[0m
 
+2019-12-22T04:28:04.710Z info: Form server running on port: 3000
+2019-12-22T04:37:19.464Z info: [0mGET /api/public/getForm [32m200 [0m29.102 ms - -[0m
+
+2019-12-22T04:38:34.904Z info: Form server running on port: 3000
+2019-12-22T04:38:40.365Z error: CONTROLLER_ERROR - TypeError: Cannot read property 'GET' of undefined
+2019-12-22T04:38:40.369Z info: [0mGET /api/public/getForm [31m500 [0m4.490 ms - 114[0m
+
+2019-12-22T04:38:54.102Z error: CONTROLLER_ERROR - TypeError: Cannot read property 'GET' of undefined
+2019-12-22T04:38:54.102Z info: [0mGET /api/public/getFormFile [31m500 [0m0.929 ms - 114[0m
+
+2019-12-22T04:39:04.590Z error: CONTROLLER_ERROR - TypeError: Cannot read property 'GET' of undefined
+2019-12-22T04:39:04.591Z info: [0mGET /api/public/testApi [31m500 [0m0.678 ms - 114[0m
+
+2019-12-22T04:40:42.959Z info: Form server running on port: 3000
+2019-12-22T04:40:53.076Z info: [0mGET /api/public/testApi [32m200 [0m4.458 ms - 21[0m
+
+2019-12-22T04:40:58.563Z info: [0mGET /api/public/getForm [32m200 [0m10.990 ms - -[0m
+
+2019-12-22T05:33:16.296Z info: Form server running on port: 3000
+2019-12-22T05:35:28.701Z info: [0mGET /api/public/getForm [32m200 [0m16.059 ms - -[0m
+
+2019-12-22T05:35:32.568Z info: [0mGET /api/public/getFormFile [32m200 [0m0.733 ms - -[0m
+
+2019-12-22T05:35:36.174Z info: [0mGET /api/public/testApi [32m200 [0m0.478 ms - 21[0m
+
