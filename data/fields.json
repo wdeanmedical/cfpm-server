@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "name": "name",
+    "label": "name:",
+    "placeholder": "enter your name...",
+    "FormComponent": "FormTextInput",
+    "value": "",
+    "state": "constants.ENABLED",
+    "style": "",
+    "onChange": "undefined",
+    "onClick": "undefined"
+  },
+  {
+    "id": 2,
+    "name": "company",
+    "label": "company:",
+    "placeholder": "enter your company name...",
+    "FormComponent": "FormTextInput",
+    "value": "",
+    "state": "constants.ENABLED",
+    "style": "",
+    "onChange": "undefined",
+    "onClick": "undefined"
+  },
+  {
+    "id": 3,
+    "name": "website",
+    "label": "website:",
+    "placeholder": "enter your company website...",
+    "FormComponent": "FormTextInput",
+    "value": "",
+    "state": "constants.ENABLED",
+    "style": "",
+    "onChange": "undefined",
+    "onClick": "undefined"
+  },
+  {
+    "id": 4,
+    "name": "email",
+    "label": "email address:",
+    "placeholder": "enter your email address...",
+    "FormComponent": "FormTextInput",
+    "value": "",
+    "state": "constants.ENABLED",
+    "style": "",
+    "onChange": "undefined",
+    "onClick": "undefined"
+  },
+  {
+    "id": 5,
+    "name": "specialty",
+    "label": "top candy specialty (enter only one):",
+    "placeholder": "enter a candy name...",
+    "FormComponent": "FormSelectInput",
+    "value": "",
+    "state": "constants.ENABLED",
+    "style": "",
+    "onChange": "undefined",
+    "onClick": "undefined",
+    "options": [
+      { "value": "MM", "label": "MMs", "id": 1 },
+      { "value": "MARS", "label": "Mars Bar", "id": 2 },
+      { "value": "MWAY", "label": "Milky Way", "id": 3 },
+      { "value": "SNICK", "label": "Snickers", "id": 4 }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "price",
+    "label": "price per unit:",
+    "placeholder": "enter a suggested price...",
+    "FormComponent": "FormTextInput",
+    "value": "",
+    "state": "constants.ENABLED",
+    "style": "",
+    "onChange": "undefined",
+    "onClick": "undefined"
+  }
+]
