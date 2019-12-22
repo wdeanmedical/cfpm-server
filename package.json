@@ -16,8 +16,7 @@
     "@middleware": "app/middleware",
     "@validation": "app/validation",
     "@controllers": "app/controllers",
-    "@persistence": "app/persistence",
-    "@tools": "tools"
+    "@persistence": "app/persistence"
   },
   "_moduleAliasIgnoreWarning": true,
   "repository": {
