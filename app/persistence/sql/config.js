@@ -3,7 +3,6 @@ const interpolate = (template, args, updateList) => {
 }
 
 const getStatement = (req, args, updateList) => {
-  console.log('req.route', req.route)
   const cleanArgs = args.map(arg => req.conn.escape(arg)) // escape all arguments to prevent injection
   const { method } = req
   const { path } = req.route
