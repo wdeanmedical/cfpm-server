@@ -9,6 +9,7 @@
     "postinstall": "link-module-alias"
   },
   "_moduleAliases": {
+    "@app": "app",
     "@config": "config",
     "@data": "data",
     "@util": "app/util",

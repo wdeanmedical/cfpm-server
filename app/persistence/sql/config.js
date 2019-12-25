@@ -1,3 +1,5 @@
+const routes = require('@app/routes');
+
 const interpolate = (template, args, updateList) => {
   return template(args, updateList)
 }
@@ -72,7 +74,7 @@ const deleteMember = args => {
 }
 
 const config = {
-  ['/public/getForm']: { GET: selectForm },
+  [routes.GET_FORM]: { GET: selectForm },
 }
 
 module.exports = { getStatement }

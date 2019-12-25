@@ -1,5 +1,6 @@
 const Joi = require('joi')
 const { logActionSchema } = require('@validation')
+const routes = require('@app/routes');
 
 const getValidator = req => {
   const { method } = req
@@ -9,9 +10,9 @@ const getValidator = req => {
 
 const config = {
   /* ******************** UTILITY ******************** */
-  ['/public/testApi']: { GET: undefined },
-  ['/public/getForm']: { GET: undefined },
-  ['/public/getFormFile']: { GET: undefined },
+  [routes.TEST_API]: { GET: undefined },
+  [routes.GET_FORM]: { GET: undefined },
+  [routes.GET_FORM_FILE]: { GET: undefined },
 }
 
 module.exports = { getValidator }

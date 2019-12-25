@@ -2,6 +2,7 @@ const db = require('@util/db')
 const testForm = require('@data/fields.json')
 const { runStatement } = require('@persistence/sql/runStatement')
 const { getStatement } = require('@persistence/sql/config')
+const routes = require('@app/routes');
 
 // HELPERS
 const { logAction } = require('./helper')
@@ -21,21 +22,21 @@ const sendResponse = (res, result) => {
 }
 
 const config = {
-  ['/public/testApi']: {
+  [routes.TEST_API]: {
     GET: (req, res) => {
       res.json({ message: 'testing' })
     },
   },
-  ['/public/getFormFile']: {
+  [routes.GET_FORM_FILE]: {
     GET: (req, res) => {
       res.json({ form: testForm })
     },
   },
-  ['/public/getForm']: {
+  [routes.GET_FORM]: {
     GET: async (req, res) => {
       // const id = /public\/getForm\/(.*?)\//.exec(req.url)[1]
-      // const { id } = req.params
-      const id = '1'
+       const { id } = req.params
+      // const id = '1'
       sendResponse(res, await runStatement(res, req.conn, getStatement(req, [id])))
     },
   },
